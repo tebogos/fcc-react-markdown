@@ -1,0 +1,22 @@
+.App{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+
+}
+.output-text{
+  background-color: #fff;
+  max-width: 600px;
+
+}
+.input-text{
+max-width: 500px;
+}
+
+code{
+  color:#d42020;
+  padding: 3px 4px;
+  background: #faf3f3;
+  border-radius: 4px;
+  font-size: 90%;
+}
