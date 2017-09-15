@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "fcc markdown project",
   "main": "index.js",
+  "Homepage": "http://tebogos.github.io/fcc-react-markdown",
   "scripts": {
     "start": "npm run build",
     "build": "webpack -d   && webpack-dev-server --content-base src/ --inline --hot ",
-    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+    "build:prod": "webpack -p ",
+    "predeplay": "npm run build:prod",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "fcc",
@@ -28,6 +31,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "gh-pages": "^1.0.0",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
     "webpack": "^3.5.6",
