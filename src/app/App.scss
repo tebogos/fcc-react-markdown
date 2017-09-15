@@ -1,3 +1,12 @@
+$color-code:#d42020;
+$background-color-output:#fff;
+$background-color-code:#faf3f3;
+$max-width-output:600px;
+$max-width-input:500px;
+$font-size-code:90%;
+$font-size-output:0.9em;
+$font-family-primary:sans-serif;
+
 .App{
   display:flex;
   flex-direction: row;
@@ -5,18 +14,20 @@
 
 }
 .output-text{
-  background-color: #fff;
-  max-width: 600px;
+  background-color:$background-color-output;
+  max-width: $max-width-output;
+  font-family:$font-family-primary ;
+  font-size: $font-size-output;
 
 }
 .input-text{
-max-width: 500px;
+max-width: $max-width-input;
 }
 
 code{
-  color:#d42020;
+  color:$color-code;
   padding: 3px 4px;
-  background: #faf3f3;
+  background: $background-color-code;
   border-radius: 4px;
-  font-size: 90%;
+  font-size: $font-size-code;
 }
